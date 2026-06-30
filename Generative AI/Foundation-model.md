@@ -767,3 +767,728 @@ Customization, privacy, fine-tuning, and lower deployment costs.
 
 ---
 
+# Text Generation
+
+## What is Text Generation?
+
+Text Generation is the process of automatically creating human-like text using AI models.
+
+Modern text generation is powered by:
+
+```text
+Large Language Models (LLMs)
+```
+
+such as:
+
+- GPT
+- Claude
+- Gemini
+- Llama
+
+---
+
+# How Text Generation Works
+
+LLMs generate text by:
+
+```text
+Predicting The Next Token
+```
+
+---
+
+Example
+
+Input:
+
+```text
+Machine Learning is
+```
+
+---
+
+Prediction:
+
+```text
+a subset of Artificial Intelligence.
+```
+
+---
+
+# Workflow
+
+```text
+Input Prompt
+      ↓
+Tokenization
+      ↓
+Embeddings
+      ↓
+Transformer Layers
+      ↓
+Next Token Prediction
+      ↓
+Generated Response
+```
+
+---
+
+# Example
+
+Prompt:
+
+```text
+Write a poem about AI.
+```
+
+---
+
+Output:
+
+```text
+AI learns from data and light,
+Helping humans day and night...
+```
+
+---
+
+# Applications
+
+```text
+Chatbots
+Content Creation
+Code Generation
+Summarization
+Translation
+Question Answering
+```
+
+---
+
+# Key Parameters
+
+## Temperature
+
+Controls randomness.
+
+---
+
+Low Temperature:
+
+```text
+More Predictable
+```
+
+Example:
+
+```text
+0.2
+```
+
+---
+
+High Temperature:
+
+```text
+More Creative
+```
+
+Example:
+
+```text
+1.0
+```
+
+---
+
+# Top-K Sampling
+
+Selects:
+
+```text
+Top K Most Likely Tokens
+```
+
+---
+
+# Top-P Sampling
+
+Selects:
+
+```text
+Most Probable Token Set
+```
+
+until cumulative probability reaches P.
+
+---
+
+# Text Generation Example
+
+Insurance Assistant:
+
+Input:
+
+```text
+Summarize this claim.
+```
+
+Output:
+
+```text
+Customer reported vehicle collision resulting in front bumper damage.
+```
+
+---
+
+# Image Generation
+
+## What is Image Generation?
+
+Image Generation is the process of creating images using AI models from text descriptions or other inputs.
+
+---
+
+Example
+
+Prompt:
+
+```text
+A futuristic city at sunset.
+```
+
+---
+
+Output:
+
+```text
+AI Generated Image
+```
+
+---
+
+# Traditional Graphics
+
+```text
+Manual Design
+```
+
+---
+
+# AI Image Generation
+
+```text
+Text Prompt
+      ↓
+AI Model
+      ↓
+Generated Image
+```
+
+---
+
+# Applications
+
+```text
+Digital Art
+Marketing
+Game Design
+Advertising
+Product Design
+Content Creation
+```
+
+---
+
+# Popular Image Models
+
+- DALL·E
+- Stable Diffusion
+- Midjourney
+- Imagen
+
+---
+
+# Text-to-Image Generation
+
+Workflow:
+
+```text
+Text Prompt
+      ↓
+Text Encoder
+      ↓
+Image Generator
+      ↓
+Generated Image
+```
+
+---
+
+Example
+
+Prompt:
+
+```text
+A robot working as a software engineer.
+```
+
+---
+
+Output:
+
+```text
+Generated Artwork
+```
+
+---
+
+# Image-to-Image Generation
+
+Input:
+
+```text
+Existing Image
+```
+
+---
+
+Output:
+
+```text
+Modified Image
+```
+
+---
+
+Applications:
+
+```text
+Style Transfer
+Image Editing
+Restoration
+```
+
+---
+
+# Multimodal AI
+
+## What is Multimodal AI?
+
+Multimodal AI can process and understand multiple types of data simultaneously.
+
+---
+
+Examples
+
+```text
+Text
+Images
+Audio
+Video
+Documents
+Code
+```
+
+---
+
+# Traditional AI
+
+```text
+One Input Type
+```
+
+---
+
+# Multimodal AI
+
+```text
+Multiple Input Types
+```
+
+---
+
+# Example
+
+Input:
+
+```text
+Image
++
+Question
+```
+
+---
+
+Question:
+
+```text
+What is shown in this image?
+```
+
+---
+
+Output:
+
+```text
+Description
+```
+
+---
+
+# Workflow
+
+```text
+Text
+Image
+Audio
+     ↓
+Unified Model
+     ↓
+Reasoning
+     ↓
+Output
+```
+
+---
+
+# Applications
+
+```text
+Visual Question Answering
+Document Understanding
+Medical Imaging
+Video Analysis
+Autonomous Vehicles
+```
+
+---
+
+# Real Example
+
+Upload:
+
+```text
+Insurance Vehicle Damage Photo
+```
+
+Ask:
+
+```text
+Estimate damage severity.
+```
+
+Output:
+
+```text
+Moderate Front-End Damage
+```
+
+---
+
+# Popular Multimodal Models
+
+- GPT
+- Gemini
+- Claude
+- LLaVA
+
+---
+
+# Diffusion Models
+
+## What are Diffusion Models?
+
+Diffusion Models are generative AI models that create data by gradually removing noise from random patterns.
+
+They power most modern image generation systems.
+
+---
+
+# Core Idea
+
+Start with:
+
+```text
+Random Noise
+```
+
+---
+
+Gradually:
+
+```text
+Remove Noise
+```
+
+---
+
+Until:
+
+```text
+Realistic Image
+```
+
+appears.
+
+---
+
+# Visualization
+
+```text
+Random Noise
+      ↓
+Less Noise
+      ↓
+Shape Appears
+      ↓
+Detailed Image
+```
+
+---
+
+# Forward Diffusion
+
+## Theory
+
+Add noise to an image.
+
+---
+
+Example
+
+```text
+Cat Image
+```
+
+↓
+
+```text
+Noisy Cat
+```
+
+↓
+
+```text
+Pure Noise
+```
+
+---
+
+# Reverse Diffusion
+
+## Theory
+
+Learn how to remove noise.
+
+---
+
+Example
+
+```text
+Pure Noise
+```
+
+↓
+
+```text
+Less Noise
+```
+
+↓
+
+```text
+Cat Image
+```
+
+---
+
+# Diffusion Workflow
+
+```text
+Text Prompt
+      ↓
+Text Encoder
+      ↓
+Noise
+      ↓
+Diffusion Process
+      ↓
+Image Generation
+```
+
+---
+
+# Why Diffusion Models Became Popular?
+
+Advantages:
+
+```text
+High Quality Images
+Stable Training
+Scalable
+Realistic Outputs
+```
+
+---
+
+# Popular Diffusion Models
+
+- Stable Diffusion
+- Imagen
+- DALL·E 3
+
+---
+
+# GANs vs Diffusion Models
+
+| GANs | Diffusion Models |
+|--------|--------|
+| Generator + Discriminator | Noise Removal |
+| Faster Generation | Slower Generation |
+| Harder Training | More Stable Training |
+| Lower Quality (sometimes) | Higher Quality |
+
+---
+
+# Insurance Example
+
+Input:
+
+```text
+Vehicle Damage Description
+```
+
+---
+
+Generate:
+
+```text
+Synthetic Damage Images
+```
+
+---
+
+Applications:
+
+```text
+Fraud Detection
+Claim Assessment
+Model Training
+```
+
+---
+
+# Relationship Between Concepts
+
+```text
+Text Generation
+      ↓
+LLMs
+      ↓
+Transformers
+      ↓
+Multimodal AI
+      ↓
+Image Generation
+      ↓
+Diffusion Models
+```
+
+---
+
+# Interview Questions
+
+### Q1. What is Text Generation?
+
+```text
+The process of generating human-like text using AI models.
+```
+
+---
+
+### Q2. What is Image Generation?
+
+```text
+The process of creating images from text prompts or other inputs using AI models.
+```
+
+---
+
+### Q3. What is Multimodal AI?
+
+```text
+AI systems capable of understanding multiple data types such as text, images, audio, and video.
+```
+
+---
+
+### Q4. What is a Diffusion Model?
+
+```text
+A generative model that creates data by gradually removing noise.
+```
+
+---
+
+### Q5. Why are Diffusion Models popular?
+
+```text
+They generate highly realistic and high-quality images.
+```
+
+---
+
+# Learning Path
+
+```text
+LLM Fundamentals
+       ↓
+Text Generation
+       ↓
+Generative AI
+       ↓
+Image Generation
+       ↓
+GANs
+       ↓
+Diffusion Models
+       ↓
+Multimodal AI
+       ↓
+Vision-Language Models
+       ↓
+Agentic AI
+```
+
+# Most Important Topics for AI Engineers
+
+```text
+Text Generation
+Prompt Engineering
+Sampling Methods
+Image Generation
+Text-to-Image Models
+Multimodal AI
+Vision-Language Models
+Diffusion Models
+Forward Diffusion
+Reverse Diffusion
+Stable Diffusion
+```
+
+These concepts are the foundation of modern:
+
+```text
+Generative AI
+ChatGPT-like Systems
+AI Copilots
+Image Generators
+Vision AI
+RAG Systems
+AI Agents
+Multimodal Applications
+```
+
+Understanding **Text Generation, Image Generation, Multimodal AI, and Diffusion Models** is essential for building next-generation AI products and platforms.
